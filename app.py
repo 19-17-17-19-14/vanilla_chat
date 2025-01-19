@@ -21,7 +21,7 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 embeddings = download_hf_embeddings()
 
-index_name = "mini-demo-vanilla-bot"
+index_name = "my_index_name"
 
 # Embed each chunk and insert the embeddings into the Pinecone index.
 docsearch = PineconeVectorStore.from_existing_index(
