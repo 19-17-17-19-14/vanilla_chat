@@ -18,7 +18,7 @@ embeddings = download_hf_embeddings()
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
-index_name = "mini-demo-vanilla-bot"
+index_name = "my_index_name"
 pc.create_index(
     name = index_name,
     dimension=384,
